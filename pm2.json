@@ -1,0 +1,18 @@
+{
+  "name": "zaShop",
+  "script": "server/index.js",
+  "cwd": "/app",
+  "watch": ["bin", "routers"],
+  "ignore_watch": ["node_modules", "logs", "public"],
+  "watch_options": {
+    "followSymlinks": false
+  },
+  "log_date_format": "YYYY-MM-DD HH:mm Z",
+  "time": true,
+  "error_file": "/var/log/3vjia/app-err.log",
+  "out_file": "/var/log/3vjia/app-out.log",
+  "env": {
+    "NODE_ENV": "production",
+    "ENABLE_NODE_LOG": "YES"
+  }
+}

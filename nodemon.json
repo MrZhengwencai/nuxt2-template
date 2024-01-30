@@ -1,0 +1,9 @@
+{
+  "watch": ["server"],
+  "exec": "node server/index.js",
+  "env": {
+    "NODE_ENV": "development",
+    "PATH_TYPE": "dev"
+  },
+  "ext": "js ts"
+}

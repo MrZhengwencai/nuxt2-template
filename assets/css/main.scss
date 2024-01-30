@@ -1,0 +1,89 @@
+@import 'reset';
+@import 'extension';
+@import 'transition';
+
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  // background-color: #eeeeee;
+  height: 100%;
+  font-size: 5.2vw;
+  &.min-width-1920 {
+    font-size:100px;
+  }
+  &.max-width-1646 {
+    font-size:86px;
+  }
+}
+
+body {
+  font-size: 16px;
+  color: #333;
+  // background-color: #eeeeee;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  &:hover {
+    color: $theme-orange;
+  }
+  &.active {
+    color: $theme-orange;
+  }
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+img[src=''],
+img:not([src]) {
+  opacity: 0;
+}
+
+/deep/.el-message-box__wrapper .el-button.el-button--primary {
+  color: rgb(255, 255, 255);
+  background-color: rgb(243, 217, 35) !important;
+  border-color: rgb(243, 217, 35) !important;
+}
+
+.pdBottom_cn .other img {
+  display: block !important;
+  margin: 0 auto !important;
+  // 避免图乱上传
+  max-width:1100px;
+}
+
+// loading
+.el-loading-spinner .el-loading-text {
+  color: rgb(254, 211, 9);
+  font-size: 18px;
+}
+
+.el-loading-spinner {
+  font-size: 30px;
+  i {
+    color: rgb(254, 211, 9);
+  }
+}
+
+.basic-data-table{
+  background: #fff;
+  padding: 20px 20px 44px;
+}

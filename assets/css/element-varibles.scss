@@ -1,0 +1,28 @@
+/* 改变主题色变量 */
+$--color-primary:#FED309;
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '../../node_modules/element-ui/lib/theme-chalk/fonts';
+
+@import  "../../node_modules/element-ui/packages/theme-chalk/src/index";
+
+
+.el-button--primary span,
+.el-button--primary:hover{
+  color:#666;
+}
+
+
+.errorDialog{
+  .el-button--primary{
+    background-color: #F56C6C;
+  }
+  .el-button--primary span{
+    color:#fff;
+  }
+  .el-button--primary:hover, .el-button--primary:focus {
+    background: #F56C6C;
+    border-color: #F56C6C;
+  }
+} 
+
